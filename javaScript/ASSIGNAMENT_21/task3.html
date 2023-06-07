@@ -1,0 +1,25 @@
+<!-- 3. Create a simple calculator that takes the input from
+input1, input 2 and add them together. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Calculator</title>
+</head>
+<body>
+<input type="text" id="input1" placeholder="Enter first number">
+<input type="text" id="input2" placeholder="Enter second number">
+<button onclick="add()">Add</button>
+<div id="output"></div>
+
+<script>
+function add() {
+  const input1 = document.getElementById("input1").value;
+  const input2 = document.getElementById("input2").value;
+  const sum = parseFloat(input1) + parseFloat(input2);
+  document.getElementById("output").innerHTML = sum;
+}
+</script>
+
+</body>
+</html>
