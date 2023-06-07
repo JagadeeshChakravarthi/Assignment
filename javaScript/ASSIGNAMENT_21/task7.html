@@ -1,0 +1,21 @@
+<!-- 7. Select all the h2 tags on screen and change their colour to
+purple. -->
+
+<html>
+<head>
+<title>Change H2 Color</title>
+</head>
+<body>
+<h2>This is a h2 tag</h2>
+<h2>This is another h2 tag</h2>
+<script>
+// Select all h2 tags
+var h2Tags = document.querySelectorAll("h2");
+
+// Change the color of all h2 tags to purple
+for (var i = 0; i < h2Tags.length; i++) {
+  h2Tags[i].style.color = "purple";
+}
+</script>
+</body>
+</html>
