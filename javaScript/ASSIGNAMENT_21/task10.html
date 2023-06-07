@@ -1,0 +1,26 @@
+
+<!-- 10. Get the number of <p> tags on the screen using JS DOM. -->
+
+<html>
+<head>
+<title>Get Number of P Tags</title>
+</head>
+<body>
+<p>This is a p tag</p>
+<p>This is another p tag</p>
+<div id = "output"></div>
+<script>
+// Get all p tags
+var pTags = document.querySelectorAll("p");
+
+// Count the number of p tags
+var numberOfPTags = pTags.length;
+
+// Log the number of p tags
+//var count = (numberOfPTags);
+var count = parseFloat(numberOfPTags)
+document.getElementById("output").innerHTML = count;
+
+</script>
+</body>
+</html>
