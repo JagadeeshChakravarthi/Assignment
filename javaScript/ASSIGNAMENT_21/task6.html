@@ -1,0 +1,20 @@
+<!-- 6. Using alert, prevent a person from leaving the screen using JS
+DOM. -->
+
+<html>
+<head>
+<title>Prevent Leaving the Screen</title>
+</head>
+<body>
+<p>This is a test page.</p>
+<script>
+// Get the window object
+var window = window;
+
+// Set the onbeforeunload event listener
+window.onbeforeunload = function() {
+  return "Are you sure you want to leave?";
+};
+</script>
+</body>
+</html>
